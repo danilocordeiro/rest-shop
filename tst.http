@@ -1,0 +1,28 @@
+GET http://localhost:3000/orders
+###
+
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Exemplo",
+    "price": 100
+}
+
+###
+GET http://localhost:3000/products/5b0d1d5c706ee51768fd2dce
+
+###
+DELETE http://localhost:3000/products/5b0d1d5c706ee51768fd2dce
+###
+
+PATCH http://localhost:3000/products/5b0d1d5c706ee51768fd2dce
+content-type: application/json
+
+[{
+    "proName": "name", "value": "Exemplo Alterado"
+}
+]
