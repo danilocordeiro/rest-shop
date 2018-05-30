@@ -8,8 +8,8 @@ POST http://localhost:3000/products HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Exemplo",
-    "price": 100
+    "name": "Exemplo 3",
+    "price": 103
 }
 
 ###
