@@ -1,6 +1,3 @@
-GET http://localhost:3000/orders
-###
-
 GET http://localhost:3000/products
 
 ###
@@ -26,3 +23,22 @@ content-type: application/json
     "proName": "name", "value": "Exemplo Alterado"
 }
 ]
+
+###
+
+POST http://localhost:3000/orders
+content-type: application/json
+
+{
+    "productId": "5b0deec710e8b21661677528",
+    "quantity": "2"
+}
+###
+
+GET http://localhost:3000/orders
+###
+
+GET http://localhost:3000/orders/5b0ff8c87883361862ea02a2
+###
+
+DELETE  http://localhost:3000/orders/5b0ff8c87883361862ea02a2
