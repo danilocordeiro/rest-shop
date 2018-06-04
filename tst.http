@@ -42,3 +42,13 @@ GET http://localhost:3000/orders/5b0ff8c87883361862ea02a2
 ###
 
 DELETE  http://localhost:3000/orders/5b0ff8c87883361862ea02a2
+
+
+#### USERS
+POST http://localhost:3000/user/signup
+content-type: application/json
+
+{
+    "email": "teste@.com",
+    "password": "123456"
+}
