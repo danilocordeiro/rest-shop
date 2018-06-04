@@ -4,7 +4,7 @@ http://localhost:3000/products
 POST http://localhost:3000/products HTTP/1.1
 
 {
-    "name": "Exemplo 5",
+    "name": "Exemplo 99",
     "price": 105.99,
     "productImage": 
 }
@@ -60,4 +60,13 @@ content-type: application/json
 {
     "email": "teste@gmail.com",
     "password": "123456"
+}
+
+###
+POST http://localhost:3000/products HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQGdtYWlsLmNvbSIsImlhdCI6MTUyODEzMTIwNiwiZXhwIjoxNTI4MTM0ODA2fQ.IropcauftZy0ZDYtuB9MrTIN_4oYSHaWLmrU4SJEOl4
+
+{
+    "name": "Exemplo 99",
+    "price": 105.99
 }
